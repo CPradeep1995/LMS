@@ -20,7 +20,6 @@ class Member(User):
         self.student_id = student_id
         self.books_issued=[]
         Member.member_list.append(self.name)
-        print(Member.member_list)
         
     def __repr__(self):
         return self.name + ' ' + self.location + ' ' + self.student_id
